@@ -24,7 +24,7 @@
 }
 
 .header__nav-item a {
-    color: #ffffff;
+    color: #dd2828;
     transition: 0.2s;
 }
 
@@ -63,3 +63,24 @@
 }
 
 /*jumbotron end*/
+
+.card__photo {
+    position: relative;
+    display: inline-block;
+}
+
+.card__photo img {
+    height: 160px;
+    width: 250px;
+}
+.card__photo p {
+    /*background: rgba(0,0,0,0.7); (полупрозрачность)*/
+    /* background: rgba(255, 255, 255, 0); */
+    color: #fff;
+    border-radius: 2px;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    font-size: 18px;
+    padding: 3px 5px;
+}
