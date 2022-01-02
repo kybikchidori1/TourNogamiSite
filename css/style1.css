@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open sans', sans-serif ;
+}
+/* Header start*/
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+
+    /* Header start nav-item*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    padding: 20px 153px;
+}
+
+.header__nav-item {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-weight: 400;
+}
+
+.header__nav-item a {
+    color: #3C3E44;
+    transition: 0.2s;
+    padding: 27.5px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.header__nav-item a:hover {
+    color: #a9c2be
+}
+
+.header__nav-item li:not(:last-child):after {
+    display: inline-block;
+    padding-right: 24px;
+    color:#ffffff;
+}
+
+    /* Header end nav-item */
+
+    /* Header start nav-user */
+
+.header__nav-user {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-weight: 400;
+}
+
+.header__nav-user a {
+    color: #5047D7;
+    transition: 0.2s;
+    padding: 23.12px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.header__nav-user a:hover {
+    color: #a9c2be
+}
+
+.header__nav-user li:not(:last-child):after {
+    display: inline-block;
+    padding-right: 24px;
+    color:#ffffff;
+}
+
+    /* Header end nav-user */
+
+/*header end*/
+
+/*hotel start*/
+
+.hotel {
+    background-image: url(../img/hotel.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+}
+
+.hotel__title {
+    color: #000000;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 84px;
+    justify-content: center;
+    text-align: left;
+    padding: 32px;
+}
+
+
+/*hotel end*/
+
+.card__photo {
+    position: relative;
+    display: inline-block;
+}
+
+.card__photo img {
+    height: 160px;
+    width: 250px;
+}
+.card__photo p {
+    /*background: rgba(0,0,0,0.7); (полупрозрачность)*/
+    /* background: rgba(255, 255, 255, 0); */
+    color: #fff;
+    border-radius: 2px;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    font-size: 18px;
+    padding: 3px 5px;
+}
