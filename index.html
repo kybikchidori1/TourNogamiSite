@@ -23,15 +23,18 @@
                     </div>
                 </div>
 
-
                 <nav>
                     <a class="nav__link" href="#">Туры</a>
                     <a class="nav__link" href="#">Идеи</a>
                     <a class="nav__link" href="#">О нас</a>
                     <a class="nav__link" href="#">Помощь</a>
-                    <a class="nav__link" href="#">Поиск</a>
-                    <a class="nav__link" href="#">Войти</a>
                 </nav>
+
+                <nav__login>
+                    <a class="nav__login_link" href="#">Поиск</a>
+                    <a class="nav__login_link" href="#">Войти</a>
+                </nav__login>
+
             </div>
         </div>
     </header>
@@ -46,63 +49,76 @@
         </div>
     </div>
 
-    <section class="section">
+    <section class="section__services">
         <div class="container">
 
             <div class="services">
+
                 <div class="services__item">
-                    <img class="services__icon" src="img/passport.png" alt="">
+                    <div class="services__icon passport">
+                        <img class="" src="img/svg/passport.svg" alt="">
+                    </div>
                     <div class="services__text">Для граждан РФ виза не требуется</div>
                 </div>
+
                 <div class="services__item">
-                    <img class="services__icon" src="img/airplane.png" alt="">
+                    <div class="services__icon airplane">
+                        <img class="" src="img/svg/airplane.svg" alt="">
+                    </div>
                     <div class="services__text">Antalya – 65 км</div>
                 </div>
+
                 <div class="services__item">
-                    <img class="services__icon" src="img/suitcase.png" alt="">
+                    <div class="services__icon suitcase">
+                        <img class="" src="img/svg/suitcase.svg" alt="">
+                        </div>
                     <div class="services__text">Уютный первокласный трансфер</div>
                 </div>
+
             </div>
+
 
             <hr>
 
-            <div class="services">
-                <div class="services__item">
-                    <div class="services__icon huh">
-                        <img class="" src="img/new.svg" alt="">
-                    </div>
 
+            <div class="services">
+                
+                <div class="services__item">
+                    <div class="services__icon wifi">
+                        <img class="" src="img/svg/wifi.svg" alt="">
+                    </div>
                     <div class="services__text">Бесплатный Wi-Fi в номере</div>
                 </div>
+
                 <div class="services__item">
-                    <img class="services__icon" src="img/chilling.png" alt="">
+                    <div class="services__icon chill">
+                        <img class="" src="img/svg/chill.svg" alt="">
+                    </div>
                     <div class="services__text">Путь к пляжу: через территорию отеля</div>
                 </div>
+
                 <div class="services__item">
-                    <img class="services__icon" src="img/game.png" alt="">
+                    <div class="services__icon game">
+                        <img class="" src="img/svg/game.svg" alt="">
+                    </div>
                     <div class="services__text">Различные развлечения на любой вкус</div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <section class="section">
-        <div class="container">
-            <div class="section__text">
-                <p>
-                    Для отдыха с детьми в отеле есть все удобства, например у нас регулярное меню и анимация детский
-                    праздников.
-                    В живописном пригороде Кемера, у подножия могущественных Торосских гор,
-                    на самом берегу Средиземного моря располагается роскошный отель Pgs Hotels Kiris Resort 5*,
-                    предлагающий своим гостям элитные условия для отдыха и широкий спектр развлечений на любой вкус!
-                    На частном пляже предлагается заняться дайвингом, серфингом, совершить полеты на воздушном шаре...
-                    Читать дальше
-                </p>
-            </div>
+    <div class="container">
+        <div class="section__board">
+            <p class="section__read">Для отдыха с детьми в отеле есть все удобства,
+            например у нас регулярное меню и анимация детских праздников.
+            В живописном пригороде Кемера, у подножия могущественных Торосских гор,
+            на самом берегу Средиземного моря располагается роскошный отель Pgs Hotels Kiris Resort 5*,
+            предлагающий своим гостям элитные условия для отдыха и широкий спектр развлечений на любой вкус!
+            На частном пляже предлагается заняться дайвингом, серфингом, совершить полеты на воздушном шаре...
+            Читать дальше</p>
         </div>
-    </section>
-
-
+    </div>
 
 
     <section class="section">
@@ -162,7 +178,7 @@
         </div><!-- /.container -->
     </section>
 
-    <section class="section">
+    <section class="section__slider">
         <div class="container">
 
             <div class="section__header">
@@ -196,9 +212,13 @@
 
     <footer class="footer">
         <div class="container">
-
-            <div class="footer__header">
-                <h2 class="footer__title">турногами</h2>
+            <div class="footer__inner">
+                <div class="footer__logo">
+                    <div class="footer__logo-description">
+                        <img src="img/logo.png" alt="">
+                        <div class="footer__logo-name">| турногами</div>
+                    </div>
+                </div>
             </div>
 
             <div class="navs">
@@ -216,8 +236,29 @@
         </div>
     </footer>
 
-    <div class="ya-lublu-Tolya">
-        SJDASDJKLASDJLKASJKLD
+    <div class="page">
+        <div class="page__content">
+        <div class="page__item">
+            <a href="#">
+                <img class="page__photo" src="img/page/1.png" alt="">
+            </a>
+        </div>
+        <div class="page__item">
+            <a href="#">
+                <img class="page__photo" src="img/page/2.png" alt="">
+            </a>
+        </div>
+        <div class="page__item">
+            <a href="#">
+                <img class="page__photo" src="img/page/3.png" alt="">
+            </a>
+        </div>
+        <div class="page__item">
+            <a href="#">
+                <img class="page__photo" src="img/page/4.png" alt="">
+            </a>
+        </div>
+        </div>    
     </div>
 </body>
 

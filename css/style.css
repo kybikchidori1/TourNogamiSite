@@ -16,6 +16,10 @@ body {
 
 /* container */
 
+.section {
+    padding: 80px 0;
+}
+
 .container {
     width: 100%;
     max-width: 1200px;
@@ -56,7 +60,7 @@ body {
 }
 .header__logo-signature{
     font-size: 12px;
-line-height: 16px;
+    line-height: 16px;
 }
 
 /* nav */
@@ -80,19 +84,34 @@ line-height: 16px;
     color:#5047D7;
 }
 
+.nav__login {
+    font-size: 16px;
+}
+
+.nav__login_link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 52px;
+
+    color: #5047D7;
+    text-decoration: none;
+
+    transition: color .2s linear;
+}
+
+.nav__login_link:hover {
+    color:#FF9500;
+}
+
 /* hotel */
 
 .hotel {
-    display: flex;
-    flex-direction: column;
-    padding-top: 101px;
-    width: 100%;
-    height: 100vh;
-
-    background: url("../img/hotel.png") center
-    no-repeat;
-    -webkit-background-size: cover;
+    background-image: url(../img/hotel.png);
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    height: 720px;
+    padding: 160px;
 }
 
 .hotel_inner {
@@ -148,21 +167,12 @@ line-height: 16px;
     color: #5047D7;
 }
 
-/* section */
-
-.section {
-    padding: 80px 0;
-}
-
-.section__text {
-    display: table;
-    padding: 34px 45px;
-    text-align: center;
-
-    font-size: 14px;
-}
 
 /* services */
+
+.section__services {
+    padding-top: 220px;
+}
 
 .services {
     display: flex;
@@ -171,8 +181,9 @@ line-height: 16px;
 
 .services__item {
     flex: 1 1 0;
-    padding-left: 85px;
+    padding-left: 80px;
     padding-right: 35px;
+    padding-top: 5px;
     position: relative;
 }
 
@@ -181,6 +192,71 @@ line-height: 16px;
     top: 0;
     left: 28px;
     z-index: 1;
+}
+
+/* icon */
+
+.passport{
+    width: 40px;
+    height: 40px;
+    border-radius: 99999px;
+    background-color: #2F80ED;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+
+.airplane{
+    width: 40px;
+    height: 40px;
+    border-radius: 99999px;
+    background-color: #4CD964;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+
+.suitcase{
+    width: 40px;
+    height: 40px;
+    border-radius: 99999px;
+    background-color: #5047D7;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+
+.wifi{
+    width: 40px;
+    height: 40px;
+    border-radius: 99999px;
+    background-color: #56CCF2;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.chill{
+    width: 40px;
+    height: 40px;
+    border-radius: 99999px;
+    background-color: #0DD149;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.game{
+    width: 40px;
+    height: 40px;
+    border-radius: 99999px;
+    background-color: #F2994A;
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
 
 .services__text {
@@ -195,6 +271,30 @@ hr {
     margin: 20px 0;
 
     border: 0;
+}
+
+/* section */
+
+
+.section__board {
+    margin: 0 auto;
+    padding: 105px 325px 105px 325px;
+
+
+    text-align: center;
+
+}
+
+.section__read {
+    box-sizing:border-box;
+    position: absolute;
+    margin:0 auto;
+    left:0;
+    right:0;
+    width: 790px;
+    height: 100px;
+
+    font-size: 14px;
 }
 
 /* blog */
@@ -240,6 +340,11 @@ hr {
     height: auto;
 }
 
+
+.blog__content{
+    padding-left: 30px;
+}
+
 .blog__title {
     margin-bottom: 10px;
 
@@ -275,6 +380,11 @@ hr {
 }
 
 /* slider */
+
+.section__slider {
+    padding-top: 20px;
+    padding-bottom: 101px;
+}
 
 .slider {
     display: flex;
@@ -322,23 +432,28 @@ hr {
 /* footer */
 
 .footer {
-    display: flex;
-    justify-content: space-between;
     background-color: #333333;
 }
 
-.footer__header {
-    position: relative;
-    margin-bottom: 16.5px;
+
+.footer__inner {
+    text-align: center;
+    padding-top: 40px;
 }
 
-.footer__title {
-    margin-top: 40px;
+.footer__logo {
+    display: flex;
+    justify-content: space-between;
     text-align: center;
 
-    font-size: 18px;
-    color: rgb(255, 255, 255);
-    font-weight: 300;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 36px;
+}
+.footer__logo-description{
+    display: flex;
+    margin: auto;
+    text-align: center;
 }
 
 .navs {
@@ -361,28 +476,47 @@ hr {
     color: #FF9500;
 }
 
-.ya-lublu-Tolya{
+/* page */
+
+.page {
     position: absolute;
-    top: 300px;
+    top: 690px;
     left: 0;
     right: 0;
     margin: 0 auto;
     display: block;
-  width: 600px;
-    height: 500px;
-    background-color: red;
+
+    width: 1170px;
+    height: 220px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
 }
 
-.huh{
-    width: 40px;
-    height: 40px;
-    border-radius: 99999px;
-    background-color: #56CCF2;
+.page__content {
     display: flex;
-    justify-content: center;
-    align-items:center;
+    justify-content: space-between;
+    padding: 30px 30px 30px 30px;
 }
 
-.blog__content{
-    padding-left: 30px;
+.page__item {
+    height: 100%;
+    position: relative;
+    margin-right: 30px;
+    overflow: hidden;
 }
+
+.page__item a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.page__item:last-child {
+    margin-right: 0px;
+}
+
+.page__photo {
+ 
+    height: auto;
+}
+
